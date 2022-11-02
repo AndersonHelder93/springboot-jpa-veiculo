@@ -3,12 +3,20 @@ package com.andersonhelder.application.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Veiculo implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	@Id
 	private String placa;
+	
 	private String tipo;
+	
 	private String cor;
+	
 	private String data_fabricacao;
 
 	public Veiculo() {
